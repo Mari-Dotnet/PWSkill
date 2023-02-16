@@ -1,0 +1,77 @@
+Q1.what is databse: 
+database are collection of the data in order to stored and retrive the data
+
+Differentiate between SQL and NoSQL databases.
+SQl means strutured query LANGUAGE : its used for complex querie and multirow transaction
+NoSQL means no structured QUERY LANGUAGE : its used un structure data and documents
+**************************************
+Q2. What is DDL? 
+DDL means data definition language it deals with database schemas and description
+
+CREATE: its used to create table, store procedure, function , views,triggers, index
+create table(), create storeprocedure
+
+DROP: delete the object form the database
+drop database databasename
+
+ALTER: Its used to alter the strcutre of database
+ALTER TABLE table name  ADD columnname datatype
+
+TRUNCATE : remove all records from table with identity values 
+truncate table tablename
+
+**************************************
+Q3. What is DML? 
+Data manipulation language it deal with table records
+
+INSERT: to inset the new record from table
+insert into tablename(col1,col2) values(value1,value2)
+
+UPDATE:to update the existing values inside the table
+update tabelname set columname=value
+
+DELETE: delete the all record from table
+delete from tablename
+
+*************************************
+Q4. What is DQL? 
+data query language is the sublanguage responsbile for reading or  querying the dat from database.
+
+Explain SELECT with an example?
+select statements used to retrive the data from the table data
+select *from tablename
+**************************************
+
+Q5. Explain Primary Key and Foreign Key.
+primary key: 
+table have only one primary key, this key also no duplicate and used to identify the record  
+Foreign key : 
+The parent and child relationship purpose we are create this foreign ke.
+table have multiple foreign keys 
+
+**************************************
+Q6. Write a python code to connect MySQL to python. Explain the cursor() and execute() method.
+import mysql.connector
+mydb = mysql.connector.connect(
+  host="localhost",
+  user="abc",
+  password="password"
+)
+print(mydb)
+mycursor = mydb.cursor()
+mycursor.execute("SHOW DATABASES")
+for x in mycursor:
+  print(x)
+  
+Cursor:
+cursor is used to execuet statements to communicate with the mysql database
+
+execute:
+excute method used to provide the query which you want execute inside the database
+
+**************************************
+Q7. Give the order of execution of SQL clauses in an SQL query.
+ select
+ From/join
+ where
+ groupby
