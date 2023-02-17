@@ -71,7 +71,10 @@ excute method used to provide the query which you want execute inside the databa
 
 **************************************
 Q7. Give the order of execution of SQL clauses in an SQL query.
- select
  From/join
  where
  groupby
+ having 
+ select
+ order by
+ limmit
