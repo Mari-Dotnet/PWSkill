@@ -1,0 +1,3 @@
+Diamensolity reduction
+KNN
+Clustring
