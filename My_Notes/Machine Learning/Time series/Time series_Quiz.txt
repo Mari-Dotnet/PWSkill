@@ -1,0 +1,48 @@
+What does ARIMA stand for in time series analysis?
+ ARIMA stands for Autoregressive Integrated Moving Average, which is a widely used time series analysis method for forecasting.
+ 
+
+What is the main intuition behind ARIMA?
+The main intuition behind ARIMA is to model the autoregressive relationship between the time series and its lags. Autoregression refers to the dependence of the time series on its own past values, and ARIMA models this dependence by using lagged values of the time series as predictors.
+
+What is the difference between AR and MA models in ARIMA?
+AR models use lagged values of the time series as predictors, while MA models use lagged errors as predictors
+
+
+What is the intuition behind differencing in ARIMA?
+To make the time series stationary
+The intuition behind differencing in ARIMA is to make the time series stationary, which means that the statistical properties of the time series (such as the mean and variance) do not change over time. Differencing involves taking the difference between consecutive values of the time series, which can help remove trends and other non-stationary patterns.
+
+Which of the following is a limitation of ARIMA models?
+They cannot handle non-linear relationships between the time series and its predictors
+
+
+Which of the following is not a step in the ARIMA modelling process?
+Fitting a linear regression model to the time series data
+
+Which of the following is a common method for selecting the order of the ARIMA model?
+The Akaike information criterion (AI(c) is a widely used method for selecting the order of the ARIMA model. It balances the fit of the model to the data with the complexity of the model.
+
+
+When differencing a time series, what does a first-order difference mean?
+
+Subtracting the current value of the time series from the value at lag 1
+: A first-order difference involves taking the difference between consecutive values of the time series, which can be written as Y(t) - Y(t-1).
+
+Which of the following is a method for diagnosing the residuals of an ARIMA model?
+The autocorrelation and partial autocorrelation functions can be used to diagnose the residuals of an ARIMA model. If there is still structure in the residuals (e.g., significant autocorrelation at lag 1), this suggests that the model may not be a good fit for the data.
+
+
+Which of the following is not a common method for forecasting with an ARIMA model?
+ Backward forecasting is not a standard method for forecasting with an ARIMA model.
+ 
+ 
+ 
+Which of the following is a common method for evaluating the performance of an ARIMA model?
+Mean absolute percentage error (MAPE)
+
+
+Mean squared error (MSE)
+
+
+Root mean squared error (RMSE)
